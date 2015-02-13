@@ -4,4 +4,4 @@ update.sh - aptitude update script
 
 mail.py - send email
 
-rp-space.sh - replace all spaces with hyphen
+rn-space.sh - replace all white space and special chars with hyphen
