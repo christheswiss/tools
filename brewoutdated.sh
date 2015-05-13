@@ -1,3 +1,5 @@
 #!/bin/bash
 
-/usr/local/bin/brew update; echo ""; /usr/local/bin/brew outdated; echo ""
+/usr/local/bin/brew update;
+outdated="$(/usr/local/bin/brew outdated)";
+test "${outdated}" != "" && echo "==> Outdated Formulae" && echo "${outdated}";
