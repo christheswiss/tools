@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_INSTALL_CLEANUP=2;
 updated=false;
 /usr/local/bin/brew update && updated=true;
 test ${updated} != true && echo "Update failed!" && /usr/local/bin/terminal-notifier -title "Homebrew" -message "Update failed!";
